@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Produits - Wy-Tri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Lien vers le CSS externe -->
+  <link rel="stylesheet" href="style-produits.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Wy-Tri</div>
+  <nav class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- SECTION RASSURANCE -->
+<section class="about-products">
+  <h1>Des Produits Authentiques et Fiables</h1>
+  <p>
+    Chez <strong>Wy-Tri</strong>, nous croyons que la confiance est la base de toute relation avec nos clients.  
+    C’est pourquoi nous garantissons que <span class="highlight">tous nos articles sont authentiques</span>, 
+    sélectionnés avec soin auprès de fournisseurs vérifiés.
+  </p>
+  <p>
+    Chaque produit est contrôlé avant expédition afin d’assurer sa qualité, sa durabilité et sa conformité.  
+    Vous pouvez acheter en toute sérénité, en sachant que vous recevez exactement ce que vous voyez.
+  </p>
+</section>
+
+<!-- SECTION GARANTIE -->
+<section class="guarantee">
+  <h2>Notre Garantie</h2>
+  <ul>
+    <li>✅ Produits originaux et certifiés</li>
+    <li>✅ Contrôle qualité avant expédition</li>
+    <li>✅ Garantie de remboursement en cas de défaut</li>
+    <li>✅ Assistance client disponible sur WhatsApp</li>
+  </ul>
+</section>
+
+<!-- SECTION SUGGESTION -->
+<section class="suggestion-box">
+  <h2>Vous ne trouvez pas ce que vous cherchez ?</h2>
+  <p>Proposez un produit que vous aimeriez voir dans notre boutique. Votre suggestion sera envoyée directement à Yvvonne via WhatsApp 📲</p>
+  
+  <input type="text" id="productName" placeholder="Nom du produit souhaité">
+  <textarea id="productDetails" rows="4" placeholder="Ajoutez des détails (marque, modèle, caractéristiques...)"></textarea>
+  <br>
+  <button onclick="sendSuggestion()">Envoyer ma suggestion</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Wy-Tri. Tous droits réservés.</p>
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function sendSuggestion() {
+  const name = document.getElementById("productName").value;
+  const details = document.getElementById("productDetails").value;
+  const message = `Bonjour Yvvonne, je voudrais suggérer un nouveau produit : ${name}. Détails : ${details}`;
+  const url = `https://wa.me/24102578658?text=${encodeURIComponent(message)}`;
+  window.open(url, "_blank");
+}
+</script>
+
+</body>
+</html>

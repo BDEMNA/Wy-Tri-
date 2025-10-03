@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Wy-Tri</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    .contact-page {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact-page h1 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+    .contact-options {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+    .contact-card {
+      width: 220px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #f5f5f5;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .contact-card:hover {
+      transform: scale(1.05);
+    }
+    .contact-card img {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+    .contact-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #0055aa;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .contact-card a:hover {
+      background: #003366;
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="logo">Wy-Tri</div>
+  <nav class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="produits.html">Produits</a>
+    <a href="categories.html">Catégories</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+</header>
+
+<!-- PAGE CONTACT -->
+<section class="contact-page">
+  <h1>Contactez-nous</h1>
+  <p>Choisissez votre moyen préféré pour nous joindre :</p>
+
+  <div class="contact-options">
+
+<!-- WhatsApp -->
+<div class="contact-card">
+  <img src="whatsapp.png" alt="WhatsApp">
+  <h3>WhatsApp</h3>
+  <p>Discutez directement avec nous</p>
+  <a 
+    href="https://wa.me/24102578658?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20vos%20produits.%20Pouvez-vous%20m%E2%80%99envoyer%20plus%20de%20d%C3%A9tails%20%3F" 
+    target="_blank">
+    Envoyer un message
+  </a>
+</div>
+
+    <!-- Facebook -->
+    <div class="contact-card">
+      <img src="facebook.png" alt="Facebook">
+      <h3>Facebook</h3>
+      <p>Suivez-nous sur Facebook</p>
+      <a href="contact.html">Accéder</a>
+    </div>
+
+    <!-- Instagram -->
+    <div class="contact-card">
+      <img src="instagram.png" alt="Instagram">
+      <h3>Instagram</h3>
+      <p>Découvrez nos nouveautés</p>
+      <a href="contact.html">Accéder</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Wy-Tri. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>
